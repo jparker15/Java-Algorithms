@@ -1,5 +1,7 @@
 package com.atsignjar;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.*;
 
 public class Main {
@@ -40,8 +42,16 @@ public class Main {
     }
 
     public static String reverseA(String msg){
-        return msg;
+
+        char charArr[] = msg.toCharArray();
+        String rev = "";
+        for(int i = charArr.length -1;i >=0;i--){
+            rev += charArr[i];
+        }
+
+        return rev;
     }
+    System.out.println(reverseA("reverse reverse"));
 }
 
 
