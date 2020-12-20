@@ -4,54 +4,25 @@ import org.w3c.dom.ls.LSOutput;
 
 import java.util.*;
 
+
 public class Main {
-    public static void main(String[] args){
-        simpleRansom("hello     world","angell lionhart");
+    public static void main(String[] args) {
+        // Create a Scanner object to read input from stdin.
+        Scanner scan = new Scanner(System.in);
+
+        // Read a full line of input from stdin and save it to our variable, inputString.
+        String inputString = scan.nextLine();
+
+        // Close the scanner object, because we've finished reading
+        // all of the input from stdin needed for this challenge.
+        scan.close();
+
+        // Print a string literal saying "Hello, World." to stdout.
+        System.out.println("Hello, World.");
+
+        // TODO: Write a line of code here that prints the contents of inputString to stdout.
+        System.out.print(inputString);
     }
-
-    public static boolean simpleRansom(String message, String source){
-        HashMap<String, Integer> letterCount = new HashMap<>();
-        String[] sourceArray = source.split("");
-        for( var letter: sourceArray){
-//            System.out.println(letterCount);
-            if(letter.equals(" ")){
-                continue;
-            }
-            if(letterCount.containsKey(letter)){
-                letterCount.put(letter, letterCount.get(letter) + 1);
-                continue;
-            }
-            letterCount.put(letter, 1);
-        }
-
-        String[] messageArray = message.split("");;
-        for( var letter: messageArray){
-            System.out.println(letter);
-            System.out.println(letterCount);
-            if(!letterCount.containsKey(letter)){
-                return false;
-            }
-            if(letterCount.get(letter) == 0){
-                return false;
-            }
-            /* letter is in the lettercount and there is at least 1*/
-            letterCount.replace(letter, letterCount.get(letter) -1);
-        }
-
-        return true;
-    }
-
-    public static String reverseA(String msg){
-
-        char charArr[] = msg.toCharArray();
-        String rev = "";
-        for(int i = charArr.length -1;i >=0;i--){
-            rev += charArr[i];
-        }
-
-        return rev;
-    }
-    System.out.println(reverseA("reverse reverse"));
 }
 
 
