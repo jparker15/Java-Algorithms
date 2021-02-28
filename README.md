@@ -1,1 +1,6 @@
-Algorithms comlpilesd with Java language
+##Java Algorithms
+
+#### Conditional Statements
+* Given an integer perform differnt conditional actions
+
+####
