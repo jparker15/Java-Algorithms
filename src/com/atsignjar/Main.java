@@ -21,7 +21,9 @@ public class Main {
 
 //        Arrays.Array();
 
-        DictionariesAndMaps.HashMaps();
+//        DictionariesAndMaps.HashMaps();
+
+        Recursion.Recursion();
     }
 }
 
