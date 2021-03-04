@@ -3,9 +3,7 @@ package com.atsignjar;
 import java.util.Scanner;
 
 public class Recursion {
-    public static void main(String[] args) {
-        Recursion();
-    }
+
   static Scanner scan = new Scanner(System.in);
 
     public static void Recursion (){
