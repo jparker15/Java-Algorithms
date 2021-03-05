@@ -31,14 +31,15 @@ public class Main {
         int consecutiveOnes = 0;
         for (int i = 0; i < binary.length(); i++){
             System.out.println(binary.charAt(i));
-            if(binary.charAt(i) == 1){
+            if(binary.charAt(i) == '1'){
                 consecutiveOnes ++;
             }else{
 //                return consecutiveOnes
                 System.out.println(consecutiveOnes);
-
+                break;
             }
         }
+
 
 
     }
