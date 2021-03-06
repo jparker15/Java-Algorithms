@@ -24,23 +24,8 @@ public class Main {
 //        DictionariesAndMaps.HashMaps();
 
 //        Recursion.Recursion();
-        System.out.println("Enter a integer to find it's binary equivalent ");
-        int n = scanner.nextInt();
-        System.out.println("Binary of " + n + " is " + Integer.toString(n,2) );
-        String binary = Integer.toString(n,2);
-        int consecutiveOnes = 0;
-        for (int i = 0; i < binary.length(); i++){
-            System.out.println(binary.charAt(i));
-            if(binary.charAt(i) == '1'){
-                consecutiveOnes ++;
-            }else{
-//                return consecutiveOnes
-                System.out.println(consecutiveOnes);
-                break;
-            }
-        }
 
-
+        BinaryNums.BinaryNums();
 
     }
 }
