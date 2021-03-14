@@ -73,7 +73,7 @@ public class Inheritance {
     }
 
      Inheritance () {
-        public static void main(String[] args) {
+
             Scanner scan = new Scanner(System.in);
             String firstName = scan.next();
             String lastName = scan.next();
@@ -88,6 +88,6 @@ public class Inheritance {
             Student s = new Student(firstName, lastName, id, testScores);
             s.printPerson();
             System.out.println("Grade: " + s.calculate() );
-        }
+
     }
 }
