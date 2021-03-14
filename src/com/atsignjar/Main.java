@@ -25,7 +25,9 @@ public class Main {
 
 //        Recursion.Recursion();
 
-        BinaryNums.BinaryNums();
+//        BinaryNums.BinaryNums();
+
+
 
     }
 }
