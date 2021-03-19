@@ -12,11 +12,22 @@ class Difference {
     // Add your code here
 
     public Difference(int [] e){
-
+        this.elements = e;
     }
 
     public void computeDifference(){
-        
+        int min = elements[0];
+        int max = 0;
+
+        for (int i = 0; i < elements.length; i++){
+            if(elements[i] < min){
+                min = elements[i];
+            }if (elements[i] > max){
+                max = elements[i];
+            }
+        }
+        maximumDifference = max - min;
+        System.out.println(maximumDifference);
     }
 } // End of Difference class
 public class Scope {
