@@ -12,7 +12,13 @@ public class Interface {
 
 class Calc implements AdvancedArithmetic {
     public int divisorSum(int n) {
-        return 0;
+        int sum = 0;
+        for (int i = 0; i < n; i++){
+            if(n % i == 0){
+                sum += n;
+            }
+        }
+        return sum;
     }
 }
 
