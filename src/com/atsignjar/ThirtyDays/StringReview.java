@@ -1,4 +1,4 @@
-package com.atsignjar;
+package com.atsignjar.ThirtyDays;
 
 import java.util.Scanner;
 

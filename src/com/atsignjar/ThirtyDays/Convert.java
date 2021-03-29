@@ -1,4 +1,4 @@
-package com.atsignjar;
+package com.atsignjar.ThirtyDays;
 
 public class Convert {
     public static int convertTo(int celsius){

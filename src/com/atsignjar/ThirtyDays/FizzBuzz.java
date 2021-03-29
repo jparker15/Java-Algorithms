@@ -1,6 +1,5 @@
-package com.atsignjar;
+package com.atsignjar.ThirtyDays;
 
-import java.awt.*;
 import java.util.Scanner;
 
 public class FizzBuzz {
