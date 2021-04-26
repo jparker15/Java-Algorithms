@@ -25,7 +25,16 @@ public class ClimbLeaderboard {
 
         public List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
             // Write your code here
+            //sort ranked scores in descending order;
+            Collections.sort(ranked, Collections.reverseOrder());
 
+            List<Integer> uniqueRanked = new ArrayList<>();
+
+            for(Integer score: ranked){
+                if(!uniqueRanked.contains(ranked)){
+                    uniqueRanked.add(ranked);
+                }
+            }
         }
 
     }
