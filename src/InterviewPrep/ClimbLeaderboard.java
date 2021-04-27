@@ -12,6 +12,17 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 public class ClimbLeaderboard {
+
+//    class RankedPlayer {
+//        int score;
+//        int rank;
+//
+//        RankedPlayer(int score, int rank){
+//            this.score = score;
+//            this.rank = rank;
+//        }
+//    }
+
     class Result {
 
         /*
@@ -25,16 +36,24 @@ public class ClimbLeaderboard {
 
         public List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
             // Write your code here
-            //sort ranked scores in descending order;
-            Collections.sort(ranked, Collections.reverseOrder());
+
 
             List<Integer> uniqueRanked = new ArrayList<>();
-
-            for(Integer score: ranked){
-                if(!uniqueRanked.contains(ranked)){
-                    uniqueRanked.add(ranked);
+            //add unique scores to new List
+            for(int score: ranked){
+                if(!uniqueRanked.contains(score)){
+                    uniqueRanked.add(score);
                 }
             }
+            // loop rank starts at lowest score and works backwards
+            for(int rank = uniqueRanked.size() - 1; rank > 0; rank--){
+
+            }
+
+
+            //create data structure containing RankedPlayer classes sorted by RankedPlayer.rank
+
+            //compare sorted RankedPlayer structure to player List scores
         }
 
     }
