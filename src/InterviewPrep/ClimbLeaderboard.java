@@ -13,15 +13,15 @@ import static java.util.stream.Collectors.toList;
 
 public class ClimbLeaderboard {
 
-//    class RankedPlayer {
-//        int score;
-//        int rank;
-//
-//        RankedPlayer(int score, int rank){
-//            this.score = score;
-//            this.rank = rank;
-//        }
-//    }
+    class RankedPlayer {
+        int score;
+        int rank;
+
+        RankedPlayer(int score, int rank){
+            this.score = score;
+            this.rank = rank;
+        }
+    }
 
     class Result {
 
@@ -39,6 +39,7 @@ public class ClimbLeaderboard {
 
 
             List<Integer> uniqueRanked = new ArrayList<>();
+            List<RankedPlayer> playerRank = new ArrayList<>();
             //add unique scores to new List
             for(int score: ranked){
                 if(!uniqueRanked.contains(score)){
@@ -47,8 +48,16 @@ public class ClimbLeaderboard {
             }
             // loop rank starts at lowest score and works backwards
             for(int rank = uniqueRanked.size() - 1; rank > 0; rank--){
+                for (int score: player){
 
+                    if(score <= uniqueRanked.get(rank)){
+                        playerRank.add(rank);
+
+                    }
+                }
             }
+
+            return playerRank;
 
 
             //create data structure containing RankedPlayer classes sorted by RankedPlayer.rank
