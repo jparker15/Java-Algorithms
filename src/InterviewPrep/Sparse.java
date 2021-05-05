@@ -1,7 +1,6 @@
 package InterviewPrep;
 
-public class Sparse {
-    import java.io.*;
+import java.io.*;
 import java.math.*;
 import java.security.*;
 import java.text.*;
@@ -13,7 +12,10 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-    class Result {
+public class Sparse {
+
+
+    static class Result {
 
         /*
          * Complete the 'matchingStrings' function below.
@@ -26,12 +28,19 @@ import static java.util.stream.Collectors.toList;
 
         public static List<Integer> matchingStrings(List<String> strings, List<String> queries) {
             // Write your code here
+            for(String str: strings){
+                System.out.println(str);
+            }
+
+            for(String que: queries){
+                System.out.println(que);
+            }
 
         }
 
     }
 
-    public class Solution {
+    public static class Solution {
         public static void main(String[] args) throws IOException {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
