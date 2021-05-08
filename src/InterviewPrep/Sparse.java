@@ -32,9 +32,7 @@ public class Sparse {
                 System.out.println(str);
             }
 
-            for(String que: queries){
-                System.out.println(que);
-            }
+
 
         }
 
