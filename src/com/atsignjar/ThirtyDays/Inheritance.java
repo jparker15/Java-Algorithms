@@ -56,17 +56,35 @@ public class Inheritance {
             }
             int avg = total/testScores.length;
 
-            if(90 <= avg && avg <= 100){
+//            if(90 <= avg && avg <= 100){
+//                return 'O';
+//            }else if(80 <= avg && avg < 90){
+//                return 'E';
+//            }else if(70 <= avg && avg < 80){
+//                return 'A';
+//            }else if(55 <= avg && avg < 70){
+//                return 'P';
+//            }else if(40 <= avg && avg < 55){
+//                return 'D';
+//            }else {
+//                return 'T';
+//            }
+            if(avg > 90){
                 return 'O';
-            }else if(80 <= avg && avg < 90){
+            }
+            if(avg >= 80){
                 return 'E';
-            }else if(70 <= avg && avg < 80){
+            }
+            if(avg >= 70){
                 return 'A';
-            }else if(55 <= avg && avg < 70){
+            }
+            if(avg >= 55){
                 return 'P';
-            }else if(40 <= avg && avg < 55){
+            }
+            if(avg >= 40){
                 return 'D';
-            }else {
+            }
+            else{
                 return 'T';
             }
         }
