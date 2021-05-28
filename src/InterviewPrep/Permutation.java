@@ -13,6 +13,13 @@ public class Permutation {
      *  2. INTEGER k
      */
 
+    /*Approach for challenge:
+    1. no repeats,
+    2. num is in range,
+    3. take lower num unless break 1 or 2,
+    4. if no num available, return list of -1.
+    */
+
     public static List<Integer> absolutePermutation(int n, int k) {
         // Write your code here
         List<Integer> perms = new ArrayList();
