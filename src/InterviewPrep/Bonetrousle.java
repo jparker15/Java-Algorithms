@@ -31,7 +31,23 @@ public class Bonetrousle {
     public static List<Long> bonetrousle(long n, long k, int b) {
         // Write your code here
         ArrayList<Long> list = new ArrayList<Long>();
-        list.add(-1L);
+        for (int i = 1; i <= b; i++){
+            list.add((long) i);
+        }
+        int sum = 0;
+
+        for(int i = 0; i < list.size(); i++){
+            sum += list.get(i);
+        }
+        if(sum > n){
+            ArrayList<Long> invalid = new ArrayList<Long>();
+            invalid.add((long)-1);
+            return invalid;
+        }
+        if(sum == n){ return list;}
+
+
+//        list.add(-1L);
         return list;
     }
 }
