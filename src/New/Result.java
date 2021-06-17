@@ -1,5 +1,7 @@
 package New;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 public class Result {
@@ -17,20 +19,35 @@ public class Result {
             // if peek == '(' pop stack
             // else add to stack
         //return stack.size()
+//
+//        Stack<Character> stack = new Stack<>();
+//        for(char c: s.toCharArray()){
+//            if(c == '(' || stack.empty() == true) {
+//                stack.add(c);
+//            }else{
+//                if(stack.peek() == '('){
+//                    stack.pop();
+//                }else{
+//                    stack.add(c);
+//                }
+//            }
+//        }
 
-        Stack<Character> stack = new Stack<>();
+//        return stack.size();
+
+        int left = 0;
+        int right = 0;
+
+        List<Character> list = new ArrayList<>();
+
         for(char c: s.toCharArray()){
-            if(c == '(' || stack.empty() == true) {
-                stack.add(c);
+            if(c == '('){
+                left++;
             }else{
-                if(stack.peek() == '('){
-                    stack.pop();
-                }else{
-                    stack.add(c);
-                }
+                right++;
             }
         }
 
-        return stack.size();
+        return Math.abs(left - right);
     }
 }
