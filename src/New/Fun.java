@@ -11,18 +11,29 @@ public class Fun {
     }
 
     public static boolean isLeapYear (int year){
-        boolean is = false;
+//        boolean is = false;
+//
+//        if(year % 4 == 0){
+//            is = true;
+//        }
+//        if (year % 4 == 0 && year % 100 == 0 ){
+//            is =  false;
+//        }
+//        if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0){
+//            is = true;
+//        }
+//        return is;
 
-        if(year % 4 == 0){
-            is = true;
+        if (year % 4 != 0){
+            return false;
         }
-        if (year % 4 == 0 && year % 100 == 0 ){
-            is =  false;
+        if (year % 100 != 0){
+            return true;
         }
-        if (year % 4 == 0 && year % 100 == 0 && year % 400 == 0){
-            is = true;
+        if (year % 400 != 0) {
+            return false;
         }
-        return is;
+        return true;
     }
 
     public static int Fib(int pos){
