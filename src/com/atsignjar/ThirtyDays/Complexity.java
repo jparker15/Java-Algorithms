@@ -7,10 +7,13 @@ public class Complexity {
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
 
+
+    }
+
+    public void checkPrime(){
         Scanner input = new Scanner(System.in);
 
         int testCases = input.nextInt();
-
 
         for(int i = 0; i < testCases; i++){
             int testNum = input.nextInt();
@@ -23,6 +26,8 @@ public class Complexity {
                 System.out.println("Prime");
             }
         }
+
+
     }
 
 }
