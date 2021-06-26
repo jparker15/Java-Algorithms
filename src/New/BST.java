@@ -29,23 +29,24 @@ public class BST {
 // compare the heights and take the largest value
 // return the largest found value
 
-        int left = 0;
-        int right = 0;
-        if(root.left == null && root.right == null){
-            return 0;
-        }
-        if(root.left != null){
-            left = getHeight(root.left);
-            left ++;
-        }
-        if(root.right != null){
-            right = getHeight(root.right);
-            right ++;
-        }
-//        if(left > right){
-//            return left;
-//        } return right;
-        return Math.max(left,right);
+//        int left = 0;
+//        int right = 0;
+//        if(root.left == null && root.right == null){
+//            return 0;
+//        }
+//        if(root.left != null){
+//            left = getHeight(root.left);
+//            left ++;
+//        }
+//        if(root.right != null){
+//            right = getHeight(root.right);
+//            right ++;
+//        }
+////        if(left > right){
+////            return left;
+////        } return right;
+//        return Math.max(left,right);
+        return 0;
 
     }
 }
