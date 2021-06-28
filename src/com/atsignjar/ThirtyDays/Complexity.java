@@ -22,9 +22,13 @@ public class Complexity {
             if(testNum % 2 == 0 || testNum < 2){
                 System.out.println("Not prime");
             }
-            else{
-                System.out.println("Prime");
+            int counter = 0;
+            while(testNum > counter){
+                counter++;
             }
+//            else{
+//                System.out.println("Prime");
+//            }
         }
 
 
