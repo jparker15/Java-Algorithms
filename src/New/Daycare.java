@@ -1,2 +1,6 @@
-package New;public class Daycare {
+package New;
+
+public class Daycare {
+
+
 }
