@@ -18,7 +18,11 @@ public class RansomNote {
 
         for(String s: magazine){
 
-            hm.merge(s, 1, Integer::sum);
+            if(hm.containsKey(s)){
+                hm.put(s, hm.get(s) + 1);
+            }else{
+                hm.put(s, 1);
+            }
 
         }
 
