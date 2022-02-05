@@ -21,6 +21,11 @@ public class Balls {
                 }
             }
         }
+        //add HashMap
+        for (int x : count.values()){
+            if(x!=0)
+                return "Impossible";
+        }
 
         return "Impossible";
     }
