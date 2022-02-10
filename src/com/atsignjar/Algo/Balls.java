@@ -5,8 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Balls {
-
-
+    
     public static String organizingContainers(List<List<Integer>> container) {
         // Write your code here
 
